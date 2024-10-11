@@ -1,0 +1,49 @@
+/*--- Dark mode ---*/
+.darkmode {
+    background-color: aqua;
+}
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--clr-surface-a50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+}
+
+#theme-switch img {
+    fill: var(--clr-surface-a30);
+    max-width: 55%;
+}
+
+#theme-switch img:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch img:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch img:last-child {
+    display: block;
+}
+
+/*--- Page classes ---*/
+.container {
+    padding: 25px;
+}
+
+.title {
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 8%;
+    padding-right: 10px;
+}

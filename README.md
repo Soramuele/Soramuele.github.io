@@ -22,7 +22,6 @@ I utilize a variety of technologies in my *Personal Portfolio* project, includin
 
 - User-friendly
 - Minimal design
-- Localization
 - Application-like user interface and experience
 - Fully responsive for all devices
 - Easy to browse
