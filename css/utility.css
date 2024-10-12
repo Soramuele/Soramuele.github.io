@@ -1,7 +1,6 @@
+@import url(variables.css);
+
 /*--- Dark mode ---*/
-.darkmode {
-    background-color: beige;
-}
 button{
     border: none;
     padding: .8em 2em;
@@ -9,7 +8,7 @@ button{
     color: white;
     border-radius: 4px;
     font: inherit;
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-weight: 500;
     cursor: pointer;
 }
@@ -74,4 +73,11 @@ button{
 }
 .navbar a:hover {
     background-color: blueviolet;
+}
+
+
+
+footer a {
+    text-decoration: underline;
+    color: white;
 }

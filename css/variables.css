@@ -1,4 +1,34 @@
-:root {
+.lightmode {
+    /* Standard colors */
+    --clr-black: #0b0b0b;
+    --clr-white: #ece9e9;
+    
+    /* Dark theme primary colors */
+    --clr-primary-a0: #9151d2;
+    --clr-primary-a10: #9f64d7;
+    --clr-primary-a20: #ac77dd;
+    --clr-primary-a30: #b98ae2;
+    --clr-primary-a40: #c59ee7;
+    --clr-primary-a50: #d1b1ec;
+    
+    /* Dark theme surface colors */
+    --clr-surface-a0: #121212;
+    --clr-surface-a10: #282828;
+    --clr-surface-a20: #3f3f3f;
+    --clr-surface-a30: #575757;
+    --clr-surface-a40: #717171;
+    --clr-surface-a50: #8b8b8b;
+    
+    /* Dark theme mixed surface colors */
+    --clr-surface-mixed-a0: #1e1922;
+    --clr-surface-mixed-a10: #332e37;
+    --clr-surface-mixed-a20: #49444d;
+    --clr-surface-mixed-a30: #605c64;
+    --clr-surface-mixed-a40: #79757c;
+    --clr-surface-mixed-a50: #928f94;
+}
+
+.darkmode {
     /* Standard colors */
     --clr-black: #0b0b0b;
     --clr-white: #ece9e9;
@@ -27,4 +57,3 @@
     --clr-surface-mixed-a40: #79757c;
     --clr-surface-mixed-a50: #928f94;
 }
-  
