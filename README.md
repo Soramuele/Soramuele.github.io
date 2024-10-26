@@ -25,7 +25,6 @@ I utilize a variety of technologies in my *Personal Portfolio* project, includin
 - Application-like user interface and experience
 - Fully responsive for all devices
 - Easy to browse
-- Light/dark mode toggle
 
 
 ## Sections
@@ -33,5 +32,5 @@ I utilize a variety of technologies in my *Personal Portfolio* project, includin
 - Home page
 - About me
 - Games
-- Other projects
+- Projects
 - Contact

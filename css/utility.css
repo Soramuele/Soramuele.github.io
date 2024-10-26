@@ -1,44 +1,5 @@
 @import url(variables.css);
 
-/*--- Dark mode ---*/
-button{
-    border: none;
-    padding: .8em 2em;
-    background-color: var(--clr-surface-a20);
-    color: white;
-    border-radius: 4px;
-    font: inherit;
-    text-transform: lowercase;
-    font-weight: 500;
-    cursor: pointer;
-}
-#theme-switch{
-    height: 50px;
-    width: 50px;
-    padding: 0;
-    border-radius: 50%;
-    background-color: var(--clr-surface-a50);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-}
-#theme-switch img{
-    fill: var(--primary-color);
-    max-width: 60%;
-}
-#theme-switch img:last-child{
-    display: none;
-}
-.darkmode #theme-switch img:first-child{
-    display: none;
-}
-.darkmode #theme-switch img:last-child{
-    display: block;
-}
-
 /*--- Page classes ---*/
 .container {
     padding: 25px;
@@ -50,34 +11,48 @@ button{
 }
 
 .logo {
-    max-width: 8%;
+    max-width: 7%;
     padding-right: 10px;
 }
 
 .navbar ul {
+    background-color: var(--clr-surface-mixed-a10);
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: space-evenly;
 }
+
 .navbar li {
     text-align: center;
     display: block;
     width: 100%;
 }
+
 .navbar a {
     display: block;
     padding: 20px;
     
 }
+
 .navbar a:hover {
-    background-color: blueviolet;
+    background-color: var(--clr-primary-a20);
 }
 
-
+footer h3, a {
+    font-size: 16px;
+}
 
 footer a {
     text-decoration: underline;
     color: white;
 }
+
+/*--- Main Page ---*/
+
+/*--- About Page ---*/
+
+/*--- Games Page ---*/
+
+/*--- Contact Page ---*/
