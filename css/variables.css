@@ -26,4 +26,12 @@
     --clr-surface-mixed-a30: #74667f;
     --clr-surface-mixed-a40: #8a7e93;
     --clr-surface-mixed-a50: #a096a8;
+
+    /* Dark theme mixed surface colors with alpha */
+    --clr-surface-mixed-alpha-a0: #36254584;
+    --clr-surface-mixed-alpha-a10: #4a3a5884;
+    --clr-surface-mixed-alpha-a20: #5f506b84;
+    --clr-surface-mixed-alpha-a30: #74667f84;
+    --clr-surface-mixed-alpha-a40: #8a7e9384;
+    --clr-surface-mixed-alpha-a50: #a096a884;
 }

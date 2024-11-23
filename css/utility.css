@@ -54,5 +54,22 @@ footer a {
 /*--- About Page ---*/
 
 /*--- Games Page ---*/
+.card-image ul {
+    background-color: var(--clr-surface-mixed-alpha-a30);
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.card-image li {
+    display: flex;
+    align-items: center;
+}
+
+.card-image li img {
+    max-width: 30px;
+    padding-right: 5px;
+}
 
 /*--- Contact Page ---*/
