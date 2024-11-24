@@ -1,6 +1,6 @@
 @import url(variables.css);
 
-/*--- Page classes ---*/
+/*#region Page classes ---*/
 .container {
     padding: 25px;
 }
@@ -48,31 +48,87 @@ footer a {
     text-decoration: underline;
     color: white;
 }
+/*#endregion */
 
 /*--- Main Page ---*/
 
 /*--- About Page ---*/
 
-/*--- Games Page ---*/
-.card-image ul {
-    background-color: var(--clr-surface-mixed-alpha-a30);
-    list-style-type: none;
+/*#region Games Page ---*/
+.cards-container {
     display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.card-image li {
+/*#region Cards ---*/
+.hero-image-container {
+    position: relative;
+    display: block;
+    margin-bottom: 5px;
+}
+.hero-image-container img {
+    border-radius: 15px;
+    display: block;
+}
+
+.card {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px;
+    background-color: var(--clr-surface-a20);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.main-content span {
+    margin-left: 5px;
+}
+
+.flex-row {
+    margin-top: 10px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.card-image li img {
-    max-width: 30px;
-    padding-right: 5px;
+.engine-base, .time-spent {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
 }
 
-/*--- Contact Page ---*/
+.hero-image-container::after {
+    content: '';
+    background-image: url("https://i.postimg.cc/9MtT4GZY/view.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-color: var(--clr-surface-mixed-alpha-a0);
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
+
+.hero-image-container:hover::after {
+  opacity: 1;
+}
+
+.small-image {
+    width: 20px;
+    margin: 0 5px;
+}
+/*#endregion */
+/*#endregion */
+
+/*#region Contact Page ---*/
 .mail p {
     display: flex;
 }
@@ -80,3 +136,4 @@ footer a {
 .mail img {
     padding-right: 5px;
 }
+/*#endregion */
