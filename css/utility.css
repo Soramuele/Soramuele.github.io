@@ -73,3 +73,10 @@ footer a {
 }
 
 /*--- Contact Page ---*/
+.mail p {
+    display: flex;
+}
+
+.mail img {
+    padding-right: 5px;
+}
