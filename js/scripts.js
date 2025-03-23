@@ -103,3 +103,41 @@
     if (window.githubCard) { window.githubCard.render = v }
 })(document);
 //#endregion
+
+//#region Cards API
+function createCards()
+{
+    const myCards = document.getElementsByClassName("cards-container");
+
+    fetch("/data/myGames.json")
+        .then(res => res.json())
+        .then(data => {
+            data.forEach(elem => {
+                var card = `
+                    <div class="card">
+                        <a href="${elem.link}" class="hero-image-container">
+                            <img class="hero-image" src="images/${elem.imgName}.jpg" alt="${elem.name} game banner"/>
+                        </a>
+                        <div class="main-content">
+                            <h3 style="font-weight: 700; color: blueviolet;">${elem.name}</h3>
+                            <span>${elem.desc}</span>
+                            <div class="flex-row">
+                                <div class="engine-base">
+                                    <p>Made in </p>
+                                    <img src="/icons/${elem.engineLogo}" alt="${elem.engineAlt}" class="small-image"/>
+                                    <p>${elem.engine}</p>
+                                </div>
+                                <div class="time-spent">
+                                    <img src="icons/clock-icon.svg" alt="clock" class="small-image"/>
+                                    <p>${elem.time}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `
+                myCards.insertAdjacentHTML('afterbegin', card);
+            });
+        })
+        .catch(err => console.error(err));
+}
+//#endregion
